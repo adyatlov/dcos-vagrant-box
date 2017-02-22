@@ -1,8 +1,8 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-$dcos_box = ENV.fetch("DCOS_BOX", "mesosphere/dcos-centos-virtualbox")
-$dcos_box_url = ENV.fetch("DCOS_BOX_URL", "http://downloads.dcos.io/dcos-vagrant/metadata.json")
+$dcos_box = ENV.fetch("DCOS_BOX", "dcos-centos-virtualbox")
+$dcos_box_url = ENV.fetch("DCOS_BOX_URL", "metadata.json")
 $dcos_box_version = ENV.fetch("DCOS_BOX_VERSION", nil)
 
 Vagrant.configure(2) do |config|
